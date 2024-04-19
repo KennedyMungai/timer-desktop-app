@@ -1,7 +1,7 @@
 const TopBar = () => {
   return (
     <div>
-      <div className="bg-blue-400"></div>
+      <div className="w-screen h-5 bg-blue-400 "></div>
     </div>
   )
 }
