@@ -35,7 +35,7 @@ const Timer = ({ isOverlay }: Props) => {
               onChange={(e) => setSeconds(e.target.value)}
               placeholder="Seconds"
             />
-            <button className="w-full px-2 border-2 rounded-lg border-slate-400 text-slate-400">
+            <button className="w-full px-2 mt-1 text-2xl border-2 rounded-lg border-slate-400 text-slate-400"onClick={() => setIsEditing(false)}>
               &#10004;
             </button>
           </div>
