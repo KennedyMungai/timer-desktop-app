@@ -8,7 +8,7 @@ type Props = {
 const InputField = ({ label, onChange, value, placeholder }: Props) => {
   return (
     <div>
-      <label className="text-neutral-200">{label}: </label>
+      <label className="font-bold text-neutral-200">{label}: </label>
       <input
         type="number"
         value={value}
