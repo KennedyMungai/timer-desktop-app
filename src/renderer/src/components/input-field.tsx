@@ -2,11 +2,16 @@ type Props = {
   label: string
   onChange: () => void
   placeholder: string
-  value: string
+  value: number
 }
 
 const InputField = ({ label, onChange, value, placeholder }: Props) => {
-  return <div>InputField</div>
+  return (
+    <div>
+      <label>{label}: </label>
+      <input type="number" value={value} onChange={onChange} placeholder={placeholder} />
+    </div>
+  )
 }
 
 export default InputField
