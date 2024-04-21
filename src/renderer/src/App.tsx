@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import TopBar from './components/top-bar'
 
 const App = () => {
+  const [isOverlay, setIsOverlay] = useState(false)
+
   return (
     <main>
       <TopBar />
