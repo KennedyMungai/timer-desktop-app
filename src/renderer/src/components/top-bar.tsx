@@ -9,7 +9,7 @@ const TopBar = () => {
 
   return (
     <div>
-      <div className="w-screen h-5 bg-blue-400" style={{ webkitAppRegion: 'drag' }} />
+      <div className="w-screen h-5 bg-blue-400 rounded-t-xl" style={{ webkitAppRegion: 'drag' }} />
       <div className="w-screen h-5 bg-blue-400" />
       <div id="control-buttons" className="absolute right-0 top-2 pe-2">
         <button id="minimize" onClick={handleMinimize} className="text-2xl font-semibold">
