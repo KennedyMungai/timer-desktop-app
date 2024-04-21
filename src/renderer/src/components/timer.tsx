@@ -6,8 +6,7 @@ type Props = {
 }
 
 const Timer = ({ isOverlay }: Props) => {
-  // TODO: Set Editing to false
-  const [isEditing, setIsEditing] = useState<boolean>(true)
+  const [isEditing, setIsEditing] = useState<boolean>(false)
   const [hours, setHours] = useState<number>(0)
   const [minutes, setMinutes] = useState<number>(1)
   const [seconds, setSeconds] = useState<number>(0)
