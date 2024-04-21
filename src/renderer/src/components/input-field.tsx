@@ -7,7 +7,7 @@ type Props = {
 
 const InputField = ({ label, onChange, value, placeholder }: Props) => {
   return (
-    <div>
+    <div className="flex justify-center">
       <label className="font-bold text-neutral-200">{label}: </label>
       <input
         type="number"
