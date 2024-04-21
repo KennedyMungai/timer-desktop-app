@@ -1,7 +1,7 @@
 type Props = {
   label: string
   onChange: () => void
-  placeholder: string
+  placeholder?: string
   value: number
 }
 
