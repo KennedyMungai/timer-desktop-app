@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Timer from './components/timer'
 import TopBar from './components/top-bar'
 
 const App = () => {
@@ -7,7 +8,7 @@ const App = () => {
   return (
     <main>
       <TopBar />
-      <h1 className="text-rose-500"> Hello World</h1>
+      <Timer isOverlay={isOverlay} />
     </main>
   )
 }
