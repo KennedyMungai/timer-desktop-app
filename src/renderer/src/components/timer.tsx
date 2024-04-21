@@ -1,9 +1,15 @@
+import InputField from './input-field'
+
 type Props = {
   isOverlay: boolean
 }
 
 const Timer = ({ isOverlay }: Props) => {
-  return <div>Timer</div>
+  return (
+    <div>
+      <InputField></InputField>
+    </div>
+  )
 }
 
 export default Timer
