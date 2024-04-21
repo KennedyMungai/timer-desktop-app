@@ -15,25 +15,30 @@ const Timer = ({ isOverlay }: Props) => {
   return (
     <div>
       {isEditing ? (
-        <div>
-          <InputField
-            label="Hours"
-            value={hours}
-            onChange={(e) => setHours(e.target.value)}
-            placeholder="Hours"
-          />
-          <InputField
-            label="Minutes"
-            value={minutes}
-            onChange={(e) => setMinutes(e.target.value)}
-            placeholder="Minutes"
-          />
-          <InputField
-            label="Seconds"
-            value={seconds}
-            onChange={(e) => setSeconds(e.target.value)}
-            placeholder="Seconds"
-          />
+        <div className="flex justify-center">
+          <div>
+            <InputField
+              label="Hours"
+              value={hours}
+              onChange={(e) => setHours(e.target.value)}
+              placeholder="Hours"
+            />
+            <InputField
+              label="Minutes"
+              value={minutes}
+              onChange={(e) => setMinutes(e.target.value)}
+              placeholder="Minutes"
+            />
+            <InputField
+              label="Seconds"
+              value={seconds}
+              onChange={(e) => setSeconds(e.target.value)}
+              placeholder="Seconds"
+            />
+            <button className="w-full px-2 border-2 rounded-lg border-slate-400 text-slate-400">
+              &#10004;
+            </button>
+          </div>
         </div>
       ) : (
         <div></div>
