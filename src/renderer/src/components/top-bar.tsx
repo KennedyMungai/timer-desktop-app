@@ -15,14 +15,14 @@ const TopBar = () => {
         <button
           id="minimize"
           onClick={handleMinimize}
-          className="text-2xl font-semibold text-neutral-200 "
+          className="p-1 text-2xl font-semibold text-neutral-200"
         >
           &#95;
         </button>
         <button
           id="close"
           onClick={handleClose}
-          className="ml-2 text-2xl font-semibold text-neutral-200 "
+          className="p-1 ml-2 text-2xl font-semibold text-neutral-200"
         >
           &times;
         </button>
