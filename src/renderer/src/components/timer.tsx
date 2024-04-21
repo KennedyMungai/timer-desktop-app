@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import InputField from './input-field'
 
 type Props = {
@@ -5,9 +6,11 @@ type Props = {
 }
 
 const Timer = ({ isOverlay }: Props) => {
+  const [isEditing, setIsEditing] = useState(false)
+
   return (
     <div>
-      <InputField />
+      <InputField label="Minutes" />
       <InputField />
       <InputField />
     </div>
