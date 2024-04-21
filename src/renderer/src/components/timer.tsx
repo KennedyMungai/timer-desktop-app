@@ -35,13 +35,18 @@ const Timer = ({ isOverlay }: Props) => {
               onChange={(e) => setSeconds(e.target.value)}
               placeholder="Seconds"
             />
-            <button className="w-full px-2 mt-1 text-2xl border-2 rounded-lg border-slate-400 text-slate-400"onClick={() => setIsEditing(false)}>
+            <button
+              className="w-full px-2 mt-1 text-2xl border-2 rounded-lg border-slate-400 text-slate-400"
+              onClick={() => setIsEditing(false)}
+            >
               &#10004;
             </button>
           </div>
         </div>
       ) : (
-        <div></div>
+        <div className="flex items-center justify-center">
+          <h1 className="font-bold text-slate-200">{`${hours}:${minutes}:${seconds}`}</h1>
+        </div>
       )}
     </div>
   )
