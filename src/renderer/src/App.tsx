@@ -8,7 +8,7 @@ const App = () => {
   return (
     <main>
       <TopBar />
-      <div className="bg-black/30">
+      <div className="bg-black/30 rounded-b-xl">
         <Timer isOverlay={isOverlay} />
       </div>
     </main>
