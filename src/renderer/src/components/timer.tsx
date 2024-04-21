@@ -78,7 +78,7 @@ const Timer = ({ isOverlay }: Props) => {
           <div id="timer-buttons" className="flex justify-around font-semibold text-slate-300">
             {isActive ? (
               <>
-                <button onClick={() => setIsActive(false)}>Pause</button>
+                <button onClick={() => setIsActive(false)}>||</button>
                 <button
                   onClick={() => {
                     setIsActive(false)
@@ -87,7 +87,7 @@ const Timer = ({ isOverlay }: Props) => {
                     setSeconds(0)
                   }}
                 >
-                  Stop
+                  &#9632;
                 </button>
               </>
             ) : (
