@@ -9,6 +9,7 @@ function createWindow(): void {
     width: 900,
     height: 670,
     frame: false,
+    transparent: true,
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
@@ -57,7 +58,7 @@ app.whenReady().then(() => {
   ipcMain.on('close-window', () => {
     const currentWindow = BrowserWindow.getFocusedWindow()
 
-    if (currentWindow) currentWindow.close()
+    if (c urrentWindow) currentWindow.close()
   })
 
   ipcMain.on('minimize-window', () => {
