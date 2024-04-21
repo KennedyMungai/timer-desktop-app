@@ -7,7 +7,9 @@ type Props = {
 const Timer = ({ isOverlay }: Props) => {
   return (
     <div>
-      <InputField></InputField>
+      <InputField />
+      <InputField />
+      <InputField />
     </div>
   )
 }
