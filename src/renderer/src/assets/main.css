@@ -5,3 +5,7 @@
 html {
     font-family: 'Courier New', Courier, monospace;
 }
+
+body {
+    @apply text-3xl;
+}
