@@ -45,7 +45,7 @@ const Timer = ({ isOverlay }: Props) => {
         </div>
       ) : (
         <div className="flex items-center justify-center">
-          <h1 className="font-bold text-slate-200">{`${hours}:${minutes}:${seconds}`}</h1>
+          <h1 className="text-6xl font-bold text-slate-200">{`${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`}</h1>
         </div>
       )}
     </div>
