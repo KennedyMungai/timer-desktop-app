@@ -58,7 +58,7 @@ app.whenReady().then(() => {
   ipcMain.on('close-window', () => {
     const currentWindow = BrowserWindow.getFocusedWindow()
 
-    if (c urrentWindow) currentWindow.close()
+    if (currentWindow) currentWindow.close()
   })
 
   ipcMain.on('minimize-window', () => {
