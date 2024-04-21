@@ -79,7 +79,16 @@ const Timer = ({ isOverlay }: Props) => {
             {isActive ? (
               <>
                 <button onClick={() => setIsActive(false)}>Pause</button>
-                <button onClick={() => console.log('Something else')}>Stop</button>
+                <button
+                  onClick={() => {
+                    setIsActive(false)
+                    setHours(0)
+                    setMinutes(0)
+                    setSeconds(0)
+                  }}
+                >
+                  Stop
+                </button>
               </>
             ) : (
               <>
